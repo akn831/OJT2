@@ -5,12 +5,11 @@ body {
 
 
 .menu {
-height: 100px;
-width: 100%;
-background-color: red;
-display: flex;
-align-items: center;
-position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .nuv {
@@ -25,8 +24,21 @@ position: relative;
 
 .top {
     background-image: url(./folder/visual_1_pc.png);
+    width: 1152px;
     background-size: cover;
     height: 600px;
+}
+
+.rightrogo {
+    background-image: url(./folder/visual_text_pc.png);
+    background-size:cover; 
+    height: 300px;
+    width: 600px;
+    position: fixed;
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+    transform: rotate(0deg);
 }
 
 .rogo {
@@ -41,7 +53,13 @@ h1 {
     text-align: center;
 }
 
+.post {
+    display: flex;
+}
 
+.post li {
+    margin: 30px;
+}
 /* フッター */
 
 .footer {
