@@ -1,5 +1,58 @@
+body {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+
 .menu {
 height: 100px;
 width: 100%;
 background-color: red;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.nuv {
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+.nuv li {
+ margin-right: 10px;
+}
+
+.top {
+    background-image: url(./folder/visual_1_pc.png);
+    background-size: cover;
+    height: 600px;
+}
+
+.rogo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/* latest */
+h1 {
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* フッター */
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: white;
 }
