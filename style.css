@@ -1,0 +1,260 @@
+body {
+    margin: 0 auto;
+    width: 1152px
+}
+
+/* main */
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nuv {
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+
+.header-right{
+    display: flex;
+}
+
+.nuv li {
+    margin-right: 30px;
+    font-size: 14px;
+    font-family: '游ゴシック体'
+}
+
+.top {
+    width: 1024px;
+    height: 448px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.rightrogo {
+    background-size:cover; 
+    height: 389px;
+    width: 463px;
+    position: fixed;
+    position: relative;
+    left: 653px;
+    bottom: 221px;
+    transform: rotate(0deg);
+    margin-bottom: -390px;
+}
+
+.rogo {
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+}
+
+p{
+    font-size: 24px;
+    font-family: '遊ゴシック体, Medium';
+    margin-top: 15px;
+}
+
+/* latest */
+
+h1 {
+    font-size: 30px;
+    margin: 80px 25px 25px;
+    text-align: center;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post a {
+    position: relative;
+    display: inline-block;
+}
+ 
+.post a::after {
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: black;
+    transform: scale(0.3,1);
+    transform-origin: right top;
+    transition: transform .3s;
+}
+ 
+.post a:hover::after {
+    transform: scale(1,1);
+}
+
+.post li:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.post li {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 320px;
+    position: relative;
+}
+
+.image{
+    width: 320px;
+    height: 206px;
+}
+
+.date{
+    margin: 15px;
+}
+
+.article{
+    position: absolute;
+    left: 230px;
+    top: 355px;
+}
+
+a{
+    font-size: 12px;
+    font-family: '遊ゴシック体, Medium';
+    text-decoration: none;
+    color: black;
+}
+
+/* フッター */
+
+.footer {
+    margin-top: 100px;
+    height: 130px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: white;
+    font-size: 16px;
+    font-family: '遊ゴシック体, Medium';
+}
+
+@media screen and (min-width: 768px){
+    .rightrogo-sp{
+        display: none;
+    }
+
+    br{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        width: 100%;
+    }
+
+    header{
+        display: none;
+    }
+
+    .rogo {
+        position: unset;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .top {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .top-img{
+        width: 100%;
+        height: 450px;
+    }
+
+    .rightrogo {
+        top: -450px;
+        left: 0;
+    }
+
+    .rightrogo-pc{
+        display: none;
+    }
+
+    .rightrogo-sp{
+        height: 200px;
+        width: 270px;
+        padding: 30px;
+    }
+
+    p{
+        font-size: 32px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    p.break{
+        word-wrap: break-word;
+    }
+
+    /* latest */
+    h1 {
+        font-size: 60px;
+        margin: 80px 25px 25px;
+    }
+
+    .post {
+        display: flex;
+        flex-wrap: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post li {
+        height: 600px;
+        width: 700px;
+        margin: 0;
+    }
+    
+    .image{
+        width: 100%;
+        height: 350px;
+    }
+    
+    .date{
+        font-size: 32px;
+    }
+
+    .title{
+        font-size: 32px;
+    }
+    
+    .article{
+        left: 570px;
+        top: 500px;
+        font-size: 24px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        height: 130px;
+        width: 100%;
+        
+    }
+}
